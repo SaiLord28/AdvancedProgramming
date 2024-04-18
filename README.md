@@ -13,7 +13,7 @@ Each workshop folder contains the materials, codes, and any additional resources
 1. **Workshop 1:** This is a programm where toy can create engines and vehicles.
     - Folder: `first workshop`
     - Description: I created a MVC structure for the programm, because it was my first programm in python. I has a vehicle class, engine class, son classes, and a menú class.
-    - Files: L
+    - Files: Python code, class diagramm image, Technical report
 
 2. **Workshop Name 2:** Documentation and a catalog for the programm
     - Folder: `second workshop`
