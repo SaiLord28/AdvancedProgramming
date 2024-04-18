@@ -13,12 +13,12 @@ Each workshop folder contains the materials, codes, and any additional resources
 1. **Workshop 1:** This is a programm where toy can create engines and vehicles.
     - Folder: `first workshop`
     - Description: I created a MVC structure for the programm, because it was my first programm in python. I has a vehicle class, engine class, son classes, and a menú class.
-    - Files: Python code, class diagramm image, Technical report
+    - Files: Python code, class diagramm image, Technical report.
 
-2. **Workshop Name 2:** Documentation and a catalog for the programm
+2. **Workshop Name 2:** Documentation and a catalog for the programm.
     - Folder: `second workshop`
-    - Description: In this version, the programm won't have a MVC structure anymore, it will be a try of a monolyte system, breaking some POO Rules, having a new documentation and diagrams of the programm
-    - Files: .
+    - Description: In this version, the programm won't have a MVC structure anymore, it will be a try of a monolyte system, breaking some POO Rules, having a new documentation and diagrams of the programm.
+    - Files: Python code, Technical report and UML Diagramms.
 
 2. **Workshop Name 2:** NOT READY YET
     - Folder: ...
