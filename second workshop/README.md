@@ -4,13 +4,15 @@
 
 This program allows users to create, upload, and browse a catalog of vehicles. Designers can create various types of vehicles and upload them to the platform. Users can view the catalog and browse vehicles created by others.
 
+It has the documentation and Scripts explanation.
+
 ## Features 
 
 - Create account/login functionality for users and designers.
 - Designer functionality to create and upload vehicles.
 - Catalog browsing for users to view available vehicles.
 - Object-oriented design with classes for Engine, Vehicle, Car, Truck, Yacht, Motorcycle.
-- No longer manages MVC model, now functions as a monolithic system.
+- No longer manages MVC model, now functions as a monolith model.
 
 ## Usage
 
