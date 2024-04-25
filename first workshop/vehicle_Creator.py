@@ -96,6 +96,9 @@ class Vehicle():
   
   def get_year(self):
     return self._year
+  
+  def get_gas_consuption(self):
+    return self._gas_consuption
 
   #_gas_consuption is the only atributes that have setter cuz it will be changed after.
   
@@ -665,4 +668,3 @@ Launch programm
 """
 
 control = Main_controller()
-
