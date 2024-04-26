@@ -96,7 +96,7 @@ class Vehicle():
   
   def get_year(self):
     return self._year
-  
+
   def get_gas_consuption(self):
     return self._gas_consuption
 
@@ -312,6 +312,8 @@ class Main_controller:
         vehicle.set_gas_consuption(1.1 * vehicle.get_engine().get_potency() + 0.2 * vehicle.get_engine().get_weight() - 0.3)
       elif vehicle.get_chasis() == "B": 
         vehicle.set_gas_consuption(1.1 * vehicle.get_engine().get_potency() + 0.2 * vehicle.get_engine().get_weight() - 0.5)
+        print ("Es B")
+  
       
 #-------------------------------------------------------------------------------------
   
@@ -356,6 +358,7 @@ class Main_controller:
     """
       car = Car(type,engine,chasis,model,year,transmision_type)
       self.cal_gas_consuption(car)
+    
   
       self.__vehicles.append(car)
 
@@ -653,7 +656,6 @@ class View:
         Engine type: {vehicle.get_engine().get_type()}
         Engine potency: {vehicle.get_engine().get_potency()}
         Engine weight: {vehicle.get_engine().get_weight()}
-        
         Gas consumption: {vehicle.get_gas_consuption()}
 _________________--""")
         time.sleep(2)
@@ -668,3 +670,4 @@ Launch programm
 """
 
 control = Main_controller()
+
