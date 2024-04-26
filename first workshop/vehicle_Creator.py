@@ -312,7 +312,6 @@ class Main_controller:
         vehicle.set_gas_consuption(1.1 * vehicle.get_engine().get_potency() + 0.2 * vehicle.get_engine().get_weight() - 0.3)
       elif vehicle.get_chasis() == "B": 
         vehicle.set_gas_consuption(1.1 * vehicle.get_engine().get_potency() + 0.2 * vehicle.get_engine().get_weight() - 0.5)
-        print ("Es B")
   
       
 #-------------------------------------------------------------------------------------
