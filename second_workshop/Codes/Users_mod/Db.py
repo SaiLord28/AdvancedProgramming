@@ -1,4 +1,4 @@
-from Users_mod.Users import User
+from Users import User
 
 class Database:
     def __init__(self):
