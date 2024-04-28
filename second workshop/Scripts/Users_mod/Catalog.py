@@ -1,6 +1,5 @@
-from Vehicles_creator.Vehicles import Vehicle, Car, Motorcycle, Yacht, Truck
+from Users_mod.Users import User, Designer
 from Users_mod.Db import Database
-from Users_mod.Users import User
 
 class Catalog:
     def __init__(self):
