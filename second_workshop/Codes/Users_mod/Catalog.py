@@ -1,5 +1,5 @@
-from Users_mod.Users import User, Designer
-from Users_mod.Db import Database
+from Users import User, Designer
+from Db import Database
 
 class Catalog:
     def __init__(self):
