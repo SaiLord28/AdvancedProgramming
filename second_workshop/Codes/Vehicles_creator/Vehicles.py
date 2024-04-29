@@ -70,8 +70,8 @@ weight: float - weight of engine (In KG)
     str: A string of the attributes of the engine.
 
     """
-    return f"""Type: {self.__type} \n 
-            Potency: {self.__potency} \n 
+    return f"""Type: {self.__type}
+            Potency: {self.__potency}
             Weight: {self.__weight} \n"""
   
 
@@ -119,12 +119,12 @@ class Vehicle():
       str: A string of the attributes of the Vehicle.
 
       """
-    return f"""Name: {self._name} \n 
-          Type: {self._type} \n 
-          Engine: {self._engine} \n 
-          Chasis: {self._chasis} \n 
-          Model: {self._model} \n 
-          Year: {self._year} \n 
+    return f"""Name: {self._name}
+          Type: {self._type}
+          Engine: {self._engine} 
+          Chasis: {self._chasis}
+          Model: {self._model}
+          Year: {self._year} 
           Gas Consuption: {self._gas_consuption} \n"""
   
     
@@ -199,13 +199,13 @@ class Car(Vehicle): #Inheritance - Car is a Vehicle
       str: A string of the attributes of the car.
 
       """  
-      return f"""Name: {self._name} \n 
-          Type: {self._type} \n 
-          Engine: {self._engine} \n 
-          Chasis: {self._chasis} \n 
-          Model: {self._model} \n 
-          Year: {self._year} \n 
-          Gas Consuption: {self._gas_consuption} \n 
+      return f"""Name: {self._name}
+          Type: {self._type}
+          Engine: {self._engine}
+          Chasis: {self._chasis}
+          Model: {self._model}
+          Year: {self._year}
+          Gas Consuption: {self._gas_consuption} 
           Transmision Type: {self._transmision_type} \n """
 
 #===========================---  CLASS TRUCK ---==================================================
@@ -249,13 +249,13 @@ class Truck(Vehicle): #Inheritance - Truck is a Vehicle
       str: A string of the attributes of the truck.
 
       """
-    return f"""Name: {self._name} \n 
-          Type: {self._type} \n 
-          Engine: {self._engine} \n 
-          Chasis: {self._chasis} \n 
-          Model: {self._model} \n 
-          Year: {self._year} \n 
-          Gas Consuption: {self._gas_consuption} \n 
+    return f"""Name: {self._name} 
+          Type: {self._type} 
+          Engine: {self._engine} 
+          Chasis: {self._chasis} 
+          Model: {self._model} 
+          Year: {self._year} 
+          Gas Consuption: {self._gas_consuption} 
           Capacity: {self._capacity} \n """
   
 
@@ -300,13 +300,13 @@ class Yacht(Vehicle):
       str: A string of the attributes of the yacht.
 
       """
-        return f"""Name: {self._name} \n 
-          Type: {self._type} \n 
-          Engine: {self._engine} \n 
-          Chasis: {self._chasis} \n 
-          Model: {self._model} \n 
-          Year: {self._year} \n 
-          Gas Consuption: {self._gas_consuption} \n 
+        return f"""Name: {self._name} 
+          Type: {self._type} 
+          Engine: {self._engine} 
+          Chasis: {self._chasis} 
+          Model: {self._model} 
+          Year: {self._year} 
+          Gas Consuption: {self._gas_consuption}
           People Capacity: {self._people_capacity} \n"""
 
 #==================================---  CLASS MOTORCYCLE ---============================
@@ -355,12 +355,12 @@ class Motorcycle(Vehicle):
       str: A string of the attributes of the motorcycle.
 
       """
-    return f"""Name: {self._name} \n 
-          Type: {self._type} \n 
-          Engine: {self._engine} \n 
-          Chasis: {self._chasis} \n 
-          Model: {self._model} \n 
-          Year: {self._year} \n 
-          Gas Consuption: {self._gas_consuption} \n 
+    return f"""Name: {self._name}
+          Type: {self._type}
+          Engine: {self._engine}
+          Chasis: {self._chasis} 
+          Model: {self._model} 
+          Year: {self._year}
+          Gas Consuption: {self._gas_consuption}
           Wheels Diameter: {self._wheels_diameter} \n """
 
