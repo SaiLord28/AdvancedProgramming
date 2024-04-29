@@ -1,3 +1,4 @@
+import time
 
 #====================================== USER  CLASS =====================================
 
@@ -45,16 +46,20 @@ class User:
               
               if rol_designer == True:
                 user = Designer(username, mail, password, rol_designer)
-                self._verification = False
+                
 
               elif rol_designer == False:  
                 user = User(username, mail, password, rol_designer)
-              self._verification = False
-
+            
+              print("===========================================================")
+              print ("The user has been registered, now you can login")
+              time.sleep(2.2)
               return user
          else:
-              print("The mail is already registered")
-              self._verification = False
+              print("===========================================================")
+              print("The mail is already registered, please try again")
+              time.sleep(2.2)
+         self._verification = False
 
 #--------------
 
@@ -71,10 +76,14 @@ class User:
           """
 
           if self._verification == True:
+            print("===========================================================")
             print("Succesfull log in")
+            time.sleep(1.5)
             return True
           else:
+               print("===========================================================")
                print("E-mail or password incorrect") 
+               time.sleep(1.5)
                return False 
 
 #---------------------------- Getters and setters -----------------------------------------
@@ -99,6 +108,9 @@ class User:
          str: The password of the user
          """
          return self._password
+    
+    def get_rol_designer(self):
+         return self._rol_designer
 #--------------------
     def set_verification(self, new_verification: bool):
          

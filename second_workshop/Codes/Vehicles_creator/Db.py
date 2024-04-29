@@ -14,13 +14,13 @@ class Database:
         mail: str - mail of user
         password: str - password of user
 
-        """
+        """ 
 
-        logged_user = User(None, None, None, None)
+        verify_user:User =  Database.__pass_register_users[mail]
         
         if mail in Database.__pass_register_users:
 
-            if Database.__pass_register_users[mail].get_password == password:
+            if verify_user.get_password() == password:
                 user.set_verification(True)
                 aux = True
                 logged_user = Database.__pass_register_users[mail]
@@ -53,9 +53,11 @@ class Database:
 
         """
         if not mail in Database.__pass_register_users:
-            new_user = user.register(username, mail, password, rol_designer)
+            new_user = user.register(username, mail, password, rol_designer,True)
             user.set_verification(True)
             Database.__pass_register_users[mail] = new_user
+            print(len(Database.__pass_register_users))
+
 
         else: 
-             user.register(username, mail, password, rol_designer)
+             user.register(username, mail, password, rol_designer, False)

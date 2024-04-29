@@ -10,73 +10,120 @@ class Catalog:
 
         self.access_menu()
 
-
+#------------------------------------- methods -------------------------------------
     def access_menu(self):
 
         while True:
-            sel=  int(input ("""
+            try:
+                sel =  int(input ("""
 
 ===========================================================                                                
         Welcome to the vehicles catalog!
            
             What do you want to do?
+                [0] Exit
                 [1] Register
                 [2] Login
-                [0] Exit
            
 ===========================================================  \n """))
-            if sel < 0:
-                print("Invalid option, select an option")
-                time.sleep(1500)
-            else:
-                break
+
+                if not 0<= sel < 3 :
+                    print("Invalid option, please select an option")
+                    time.sleep(1.5)
+                else:
+                    break
+                
+            except:
+                print("Invalid option, please select an option")
+                time.sleep(1.5)
+
         if sel == 0:
             print("Good Bye :3")
-            time.sleep(1500)
 
         elif sel == 1:
 
             print("===========================================================")
             self.register_menu()
-            print("===========================================================")
+            time.sleep(1.5)
 
         elif sel == 2:
             print("===========================================================")
             self.login_menu()
-            print("===========================================================")
-            
-                
+                  
+  
+#--------------------------------
+
     def register_menu(self):
         rol_designer:bool 
 
-        while True:
-            username = input("Please enter your username")
-            mail = input("Please enter your email address")
-            password = input("Please enter your password")
-            design_ask = input("Do you want to be a designer? (y/n)")
+        username = input("Please enter your username: ")
+        mail = input("Please enter your email address: ")
+        password = input("Please enter your password: ")
 
+        while True:    
+            design_ask = input("Do you want to be a designer? (y/n): ")
 
-            if design_ask == "y":
+            if design_ask.lower() == "y":
                 rol_designer = True
                 break
 
-
-            elif design_ask == "n":
+            elif design_ask.lower() == "n":
                 rol_designer == False
                 break
             else:
                 print("Invalid option, select y or n")
-                Database.verify_register(username, mail, password, rol_designer)
+                time.sleep(1)
+        Database.verify_register(username, mail, password, rol_designer,self.__actual_user)
+        self.access_menu()
+
+
+#--------------------------------
 
     def login_menu(self):
                 
-            mail = input("Please enter your email address")
-            password = input("Please enter your password")
+            mail = input("Please enter your email address: ")
+            password = input("Please enter your password: ")
 
-            if Database.verify_login(mail, password, self.__actual_user)[0] == True:
+            (verification, user) = Database.verify_login(mail, password, self.__actual_user)
 
-                self.__actual_user = Database.verify_login(mail, password, self.__actual_user)[1]
+            if verification == True:
+
+                self.__actual_user = user
+                self.principal_menu()
 
             else:
                 self.access_menu()
     
+    def principal_menu(self):
+
+        while True:
+
+            sel = int(input(f"""===========================================================
+                   Welcome {self.__actual_user.get_username()} !! 
+
+                   What do you want to do today?
+
+                    [0] Exit
+                    [1] See Catalog
+
+                     """ ))
+
+            if self.__actual_user.get_rol_designer == False:
+                 print("===========================================================")
+
+                 if  not 0 <=sel<= 1:
+                     print("Invalid option, please select an option")
+                     time.sleep(1.5)
+                 elif sel == 0: 
+                     print("Good Bye :3")
+                     break
+                 elif sel == 1:
+                     self.show_catalog()
+
+            elif self.__actual_user.get_rol_designer == True:
+                 self.__actual_user: Designer
+
+    def show_catalog():
+        print("  =============================================================")
+        print("There are no vehicles in the list.")	
+        
