@@ -1,5 +1,5 @@
 from Users import User, Designer
-from Vehicles import Vehicle, Car, Motorcycle, Yacht
+from Vehicles import Vehicle, Car, Motorcycle, Yacht, Engine
 from Db import Database
 import time
 
@@ -156,10 +156,16 @@ class Catalog:
                 print("Invalid option, please select an option")
                 time.sleep(1.5)
 
-
 #--------------------------------
     def show_catalog(self):
-        print("There are no vehicles in the list.")	
+        if self.__created_vehicles == []:
+            print("There are no vehicles in the list.")
+            self.principal_menu()
+        else:
+            print(f"There are {len(self.__created_vehicles)} vehicles in the list.")
+            for i in range(len(self.__created_vehicles)):
+                print(f"PENDING")
+            self.principal_menu()
 
  #--------------------------------      
     def create_vehicle_menu(self):
@@ -168,3 +174,27 @@ class Catalog:
 #--------------------------------
     def watch_created_vehicles(self):
         print("watch created vehicles")
+
+    def create_engine_menu(self):
+            print(f"Frist, let's create the engine of your {vehicle}: ")
+            type = input("Please write the type of engine: ")
+            while True:
+        try:
+          potency = float(input("Please write the potency of your engine in Kilowats: "))
+          while potency < 0:
+            print("Please, write a possitive number")
+          break
+        except Exception:
+          print("Please, write a number")
+        
+    while True:
+        try:
+          weight = float(input("Please write the weight of your engine in Kilograms: "))
+          while weight < 0:
+            print("Please, write a possitive number")
+          break
+        except Exception:
+          print("Please, write a number")
+     
+    engine = Engine(type, potency, weight)
+    return engine
