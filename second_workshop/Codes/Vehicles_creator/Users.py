@@ -100,8 +100,6 @@ class User:
          """
          return self._password
 #--------------------
-
-
     def set_verification(self, new_verification: bool):
          
          """

@@ -1,19 +1,11 @@
 from Users import User
 
 class Database:
-    def __init__(self):
-        """
-        Constructor Method  - creates instances of User class - gives values to the atributes
-
-        """
-
-        self.__pass_register_users = {}
+    __pass_register_users = {}
 
 #--------------------------------methods--------------------------------
     @staticmethod #This method is static cuz the Db has no instances, so it can be used in another class without instantiation
-    def verify_login(self, mail, password, user: User):
-
-
+    def verify_login(mail, password, user: User):
 
         """
         verify_login method - verifies if the user exists and if the password is correct
@@ -23,20 +15,30 @@ class Database:
         password: str - password of user
 
         """
-        if mail in self.register_users:
-            if self.register_users[mail].get_password == password:
+
+        logged_user = User(None, None, None, None)
+        
+        if mail in Database.__pass_register_users:
+
+            if Database.__pass_register_users[mail].get_password == password:
                 user.set_verification(True)
+                aux = True
+                logged_user = Database.__pass_register_users[mail]
             else:
                 user.set_verification(False)
+                aux = False
         else:
             user.set_verification(False)
+            aux = False
 
         user.login()
+        return aux, logged_user
+
 
 #---------
 
     @staticmethod #This method is static cuz the Db has no instances, so it can be used in another class without instantiation
-    def verify_register(self, username, mail, password, rol_designer, user: User):
+    def verify_register(username, mail, password, rol_designer, user: User):
         """"
         register method - registers a new user
 
@@ -50,10 +52,10 @@ class Database:
 
 
         """
-        if not mail in self.pass__register_users:
+        if not mail in Database.__pass_register_users:
             new_user = user.register(username, mail, password, rol_designer)
             user.set_verification(True)
-            self.pass__register_users[mail] = new_user
+            Database.__pass_register_users[mail] = new_user
 
         else: 
              user.register(username, mail, password, rol_designer)
