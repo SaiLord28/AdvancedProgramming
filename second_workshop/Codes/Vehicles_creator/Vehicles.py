@@ -143,7 +143,7 @@ class Vehicle:
   
   #----------
 
-  def get_type(self):
+  def get_type(self) -> str:
       
       """Method to get the type of the vehicle
       
@@ -160,7 +160,7 @@ class Vehicle:
 class Car(Vehicle): #Inheritance - Car is a Vehicle  
 
   #Constructor Method
-  def __init__(self, name: str, type: str, engine: Engine, chasis: str, model: str, year: int, transmision_type: str) -> None:
+  def __init__(self, name: str, type: str, engine: Engine, chasis: str, model: str, year: int, transmision_type: str):
     """
     Constructor Method  - creates instances of Car class - gives values to the atributes
 
@@ -252,8 +252,9 @@ class Truck(Vehicle): #Inheritance - Truck is a Vehicle
     super().__init__(name, type, engine, chasis, model, year)
     self.__capacity = capacity 
       
+#------------------------------------- Methods --------------------------------------
 
-  def __str__(self):
+  def __str__(self) -> str:
     """
     __str__ method.
 
@@ -309,7 +310,8 @@ class Yacht(Vehicle):
     super().__init__(name, type, engine, chasis, model, year)
     self.__people_capacity = people_capacity 
 
-  def __str__(self):
+#------------------------------------- Methods --------------------------------------
+  def __str__(self) -> str:
     """
     __str__ method.
 

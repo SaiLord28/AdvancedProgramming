@@ -74,7 +74,7 @@ class User:
 
 #--------------
 
-    def login(self):
+    def login(self) -> None:
           
           """
           login method - logs in a user
@@ -99,22 +99,18 @@ class User:
 
 #---------------------------- Getters and setters -----------------------------------------
 
-    def get_username(self):
-
+    def get_username(self) -> str:
       """
-    login method - logs in a user
+      get_username method - gets the username of the user
 
-    Args:
-        mail: str - mail of user
-        password: str - password of user
+      Returns:
+      str: The username of the user
 
-    Returns:
-        bool: True if the login is successful, False otherwise
-
-    If the user's verification status is True, the method checks if the provided mail and password match the stored ones. If they do, it prints a success message and returns True. If the verification status is False, it prints a message indicating that the mail or password is incorrect and returns False.
-    """
+      This method retrieves the username of the user. It does not take any parameters and simply returns the stored username attribute of the user.
+      """
       return self._username
 
+#--------------
 
     def get_password(self) -> str:
       """
@@ -124,7 +120,9 @@ class User:
     str: The password of the user
     """
       return self._password
-    
+
+#--------------
+
     def get_rol_designer(self) -> bool:
       """
     get_rol_designer method - gets the designer role of the user
@@ -134,7 +132,7 @@ class User:
     """
       return self._rol_designer
 #--------------------
-    def set_verification(self, new_verification: bool):
+    def set_verification(self, new_verification: bool) -> Nine:
          
          """
     set_verification method - sets the verification of the user

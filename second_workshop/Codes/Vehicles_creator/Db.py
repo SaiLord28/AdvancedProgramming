@@ -16,7 +16,7 @@ class Database:
 
 #--------------------------------methods--------------------------------
     @staticmethod  # This method is static cuz the Db has no instances, so it can be used in another class without instantiation
-    def verify_login(mail, password, user: User):  # noqa: E501
+    def verify_login(mail, password, user: User) -> tuple: 
         """
         verify_login method - verifies if the user exists and if the password is correct
 

@@ -21,7 +21,7 @@ class Catalog:
         self.access_menu()
 
 #------------------------------------- methods -------------------------------------
-    def access_menu(self):
+    def access_menu(self) -> None:
         """
         This method is the main menu of the catalog. It allows users to select options such as registering, logging in, or exiting the program.
         """
@@ -66,7 +66,7 @@ class Catalog:
   
 #--------------------------------
 
-    def register_menu(self):
+    def register_menu(self) -> None:
 
         """
         This method is responsible for registering a new user in the catalog.
@@ -107,7 +107,7 @@ class Catalog:
 
 #--------------------------------
 
-    def login_menu(self):
+    def login_menu(self) -> None:
             
             """
             This method is responsible for logging in a user in the catalog.
@@ -137,7 +137,7 @@ class Catalog:
                 self.access_menu()
 
 #--------------------------------
-    def principal_menu(self):
+    def principal_menu(self)->None:
         """"
             Shows the principal menu for the user.
 
@@ -241,7 +241,7 @@ class Catalog:
                     time.sleep(1.5)
 
 #--------------------------------
-    def show_catalog(self):
+    def show_catalog(self) -> None:
         """
     Displays the catalog of vehicles created by the user.
 
@@ -279,7 +279,7 @@ class Catalog:
             self.principal_menu()
 
  #--------------------------------      
-    def create_vehicle_menu(self):
+    def create_vehicle_menu(self) -> None:
     
         """
     Shows the menu to create a vehicle
@@ -452,7 +452,7 @@ class Catalog:
         self.principal_menu()
         
 #--------------------------------
-    def watch_created_vehicles(self):
+    def watch_created_vehicles(self) -> None:
 
         """
     Displays the list of vehicles created by the user.
@@ -491,7 +491,7 @@ class Catalog:
             self.principal_menu()
 
 #--------------------------------
-    def create_engine_menu(self, vehicle_type:str):
+    def create_engine_menu(self, vehicle_type:str) -> Engine:
 
             """
     This method is responsible for creating an engine for a vehicle.
