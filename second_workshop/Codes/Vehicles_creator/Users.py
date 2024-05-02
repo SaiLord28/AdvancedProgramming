@@ -132,7 +132,7 @@ class User:
     """
       return self._rol_designer
 #--------------------
-    def set_verification(self, new_verification: bool) -> Nine:
+    def set_verification(self, new_verification: bool) -> None:
          
          """
     set_verification method - sets the verification of the user
