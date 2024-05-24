@@ -15,15 +15,15 @@ Each workshop folder contains the materials, codes, and any additional resources
     - Description: I created a MVC structure for the programm, because it was my first programm in python. I has a vehicle class, engine class, son classes, and a menú class.
     - Files: Python code, class diagramm image, Technical report.
 
-2. **Workshop Name 2:** Documentation and a catalog for the programm.
+2. **Workshop 2:** Documentation and a catalog for the programm.
     - Folder: `second workshop`
     - Description: In this version, the programm won't have a MVC structure anymore, it will be a try of a monolyte system, breaking some POO Rules, having a new documentation and diagrams of the programm.
     - Files: Python code, Technical report and UML Diagramms.
 
-2. **Workshop Name 2:** NOT READY YET
-    - Folder: ...
-    - Description: ....
-    - Files: ....
+2. **Workshop 3:** NOT READY YET
+    - Folder: `third workshop`
+    - Description: In this version, the programm will have a base of the APIS and the HTML, and the technical report have new documentation of the html and some Javascript definitions.
+    - Files: Backend codes, Frontend codes, new technical report and documentation.
 
    
 ## Contact Information

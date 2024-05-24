@@ -1,42 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome User</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    h1 {
-      font-size: 24px;
-    }
-
-    button {
-      display: block;
-      margin: 20px auto;
-      padding: 10px 20px;
-      font-size: 18px;
-      background-color: #000000;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background-color 0.3s ease;
-    }
-
-    button:hover {
-      background-color: #000000;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome User</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>Welcome User</h1>
-  <button onclick="location.href='catalog.html'">See Catalog</button>
-  <button onclick="location.href='create_vehicle.html'">Create Vehicle</button>
-  <button onclick="location.href='vehicles_list.html'">See Vehicles List</button>
+    <h1>Welcome User</h1>
+    <p>What do you want to do today?</p>
+    <button onclick="location.href='catalog.html'">See Catalog</button>
+    <button onclick="location.href='vehicles_ask.html'">Create Vehicle</button>
+    <button onclick="location.href='vehicles_list.html'">See Vehicles List</button>
 </body>
 </html>

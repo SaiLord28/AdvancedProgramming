@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vehicles Creator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Vehicles Creator</h1>
+    <p>First, let's create the engine of your car</p>
+    
+    <form>
+        <label for="engine-type">Type of engine</label>
+        <input type="text" id="engine-type" name="engine-type">
+        
+        <label for="engine-potency">Potency of engine (Kilowatts)</label>
+        <input type="number" id="engine-potency" name="engine-potency">
+        
+        <label for="engine-weight">Weight of your engine (Kilograms)</label>
+        <input type="number" id="engine-weight" name="engine-weight">
+        
+        <p>Now, let's create your vehicle</p>
+        
+        <label for="vehicle-name">Vehicle's name</label>
+        <input type="text" id="vehicle-name" name="vehicle-name">
+        
+        <label for="vehicle-chassis">Chassis (A or B)</label>
+        <input type="text" id="vehicle-chassis" name="vehicle-chassis">
+        
+        <label for="vehicle-model">Vehicle's model</label>
+        <input type="text" id="vehicle-model" name="vehicle-model">
+        
+        <label for="model-year">Year of the model</label>
+        <input type="number" id="model-year" name="model-year">
+        
+        <label for="special-attribute">Special attribute</label>
+        <input type="text" id="special-attribute" name="special-attribute">
+        
+        <div class="radio-group">
+            <p>Do you want to upload to catalog?</p>
+            <input type="radio" id="upload-yes" name="upload-catalog" value="yes">
+            <label for="upload-yes">Yes</label>
+            <input type="radio" id="upload-no" name="upload-catalog" value="no">
+            <label for="upload-no">No</label>
+        </div>
+        
+        <button type="button" onclick="location.href='star.html'">Create vehicle</button>
+    </form>
+
+</body>
+</html>
+
