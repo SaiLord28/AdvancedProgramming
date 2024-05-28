@@ -1,6 +1,6 @@
 # Fixing errors - worskshop
 
-The objetive of this workshop was rewritte some codes in order to fix the problem in eac one. So, this document is to explain all the changes I did.
+The objetive of this workshop was rewritte some codes in order to fix the problem in each one. So, this document is to explain all the changes I did.
 
 ## "#" and ' """ ' Comments 
 
@@ -68,9 +68,9 @@ in the Codes folder
 
 Go to the Navigator and writte the localgost:8000/docs and execute the post /products_post commands, push the try it out button
 
-### 7. Star the HTML
+### 7. Start the HTML
 
-Star the html and push each button to watch it functionality
+Start the html and push each button to watch it functionality
 
 
 ## Prerequisites
