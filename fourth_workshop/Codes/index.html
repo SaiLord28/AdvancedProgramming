@@ -5,19 +5,16 @@
     <meta charset="UTF-8">
     <meta name="description" content="This is a simple example to explore OSI layers in a simple network">
     <link rel="stylesheet" type="text/css" href="styles.css">
-    <script src="functions.js"></script>
 </head>
 <body>
     <h1>Workshop 4 - AP</h1>
     <h2>Full-Stack Test</h2>
     <p>Click on the buttons to explore services</p>
     <div>
-        <!-- Modificamos el nombre de la función onclick -->
         <button onclick="callMessage()">Get Message</button>
-        <!-- Modificamos el nombre de la función onclick -->
-        <button onclick="callWebService()">Get Table</button>
+        <button onclick="callWebService()">Get Table</button> <!-- Updated: Call to callWebService -->
     </div>
-    <!-- Agregamos un contenedor div para mostrar el resultado -->
     <div id="result"></div>
+    <script src="functions.js"></script> <!-- Moved the script to the end of the body -->
 </body>
 </html>
