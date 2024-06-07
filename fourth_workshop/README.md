@@ -77,6 +77,8 @@ Start the html and push each button to watch it functionality
 
 - Ensure you have Docker properly configured on your system.
 
-## Contact
+## Credits
 
-- Sergio Nicolás Mendivelso: snmendivelsom@udistrital.edu.co
+- Author: Sergio Nicolás Mendivelso
+- University ID: 20231020227
+- Email: snmendivelsom@udistrital.edu.co
