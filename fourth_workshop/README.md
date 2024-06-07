@@ -1,6 +1,6 @@
 # Fixing errors - worskshop
 
-The objetive of this workshop was rewritte some codes in order to fix the problem in each one. So, this document is to explain all the changes I did.
+The objetive of this workshop was rewritte some codes in order to fix the problem in each one. So, in this files are some comments to explain all the changes I did.
 
 ## "#" and ' """ ' Comments 
 
